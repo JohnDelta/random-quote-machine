@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="main.js"></script>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<title>Random Quote Machine</title>
+	</head>
+	
+	<body>
+		<main>
+			<div id="quote-box">
+				<!-- <h1 class="title">Random Quote Machine</h1> -->
+				<div class="quote-wrapper">
+					<i id="quote-icon" class="fa fa-quote-left">
+						<div id="text">
+						Apparently you may have forgotten to
+						connect me to the internet.
+						</div>
+					</i>
+					<div class="author-box">
+						<span class="dash">-</span> <div id="author">This site</div>
+					</div>
+					<div class="buttons">
+						<a class="button" href="" target="_blank" id="tweet-quote" title="Tweet this">
+							<i class="fa fa-twitter-square"></i>
+						</a>
+						<a class="button" href="" target="_blank" id="tumblr-quote" title="Tumblr this">
+							<i class="fa fa-tumblr-square"></i>
+						</a>
+					</div>
+				</div>
+				<button class="button object-rotate-z-animation animation-paused" id="new-quote" title="New Quote">
+					<i class="fa fa-refresh"></i>
+				</button>
+			</div>
+		</main>
+		
+		<footer>
+			<a class="owner-text" href="index.html" target="_blank">By John Delta</a>
+		</footer>
+	</body>
+</html>
