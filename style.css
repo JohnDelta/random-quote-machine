@@ -10,8 +10,6 @@
 }
 
 body {
-	display : flex;
-	flex-direction : column;
 	width : 100vw;
 	min-height : 100vh;
 	background-image : url("https://images.pexels.com/photos/875858/pexels-photo-875858.png?auto=compress&cs=tinysrgb&h=750&w=1260");
@@ -22,6 +20,7 @@ body {
 
 main {
 	background-color : none;
+	min-height : 350px;
 	height : 90vh;
 	display : flex;
 	flex-direction : column;
@@ -31,6 +30,7 @@ main {
 
 footer {
 	height : 10vh;
+	min-height : 50px;
 	background-color : #000000;
 	display : flex;
 	justify-content : center;
@@ -43,6 +43,12 @@ footer {
 	font-size : 14px;
 }
 
+@media only screen and (min-width : 768px) {
+	.owner-text {
+		font-size : 16px;
+	}
+}
+
 /*
 .title {
 	font-size : 28px;
@@ -52,7 +58,6 @@ footer {
 
 #quote-box {
 	width : 80%;
-	min-height : 450px;
 	display : flex;
 	flex-direction : column;
 	justify-content : center;
@@ -64,7 +69,6 @@ footer {
 		width : 50%;
 		min-width : 400px;
 		max-width : 550px;
-		min-height : 450px;
 	}
 }
 
