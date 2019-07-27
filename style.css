@@ -175,15 +175,48 @@ footer {
 }
 
 .object-rotate-z-animation {
+	-webkit-animation : object-rotate-z 2s linear 0s infinite;
+	-moz-animation : object-rotate-z 2s linear 0s infinite;
+	-o-animation : object-rotate-z 2s linear 0s infinite;
 	animation : object-rotate-z 2s linear 0s infinite;
 }
 
 .animation-running {
+	-webkit-animation-play-state : running;
+	-moz-animation-play-state : running;
+	-o-animation-play-state : running;
 	animation-play-state : running;
 }
 
 .animation-paused {
 	animation-play-state : paused;
+}
+
+@-webkit-keyframes object-rotate-z {
+	from {
+		transform : rotateZ(0deg);
+	}
+	to {
+		transform : rotateZ(360deg);
+	}
+}
+
+@-moz-keyframes object-rotate-z {
+	from {
+		transform : rotateZ(0deg);
+	}
+	to {
+		transform : rotateZ(360deg);
+	}
+}
+
+@-o-keyframes object-rotate-z {
+	from {
+		transform : rotateZ(0deg);
+	}
+	to {
+		transform : rotateZ(360deg);
+	}
 }
 
 @keyframes object-rotate-z {
