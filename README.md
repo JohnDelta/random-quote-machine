@@ -1,3 +1,5 @@
 # random-quote-machine
 
-Simple website which shows random quotes.
+Simple responsive website which shows random quotes.
+
+Written using CSS3, HTML5, Javascript and Jquery.
