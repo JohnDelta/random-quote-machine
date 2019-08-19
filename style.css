@@ -20,18 +20,33 @@ body {
 main {
 	background-color : none;
 	min-height : 90vh;
+	display : -webkit-box;
+	display : -ms-flexbox;
 	display : flex;
-	flex-direction : column;
-	align-items : center;
-	justify-content : center;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	    -ms-flex-direction : column;
+	        flex-direction : column;
+	-webkit-box-align : center;
+	    -ms-flex-align : center;
+	        align-items : center;
+	-webkit-box-pack : center;
+	    -ms-flex-pack : center;
+	        justify-content : center;
 }
 
 footer {
 	min-height : 10vh;
 	background-color : #000000;
+	display : -webkit-box;
+	display : -ms-flexbox;
 	display : flex;
-	justify-content : center;
-	align-items : center;
+	-webkit-box-pack : center;
+	    -ms-flex-pack : center;
+	        justify-content : center;
+	-webkit-box-align : center;
+	    -ms-flex-align : center;
+	        align-items : center;
 }
 
 .owner-text {
@@ -56,10 +71,19 @@ footer {
 #quote-box {
 	min-height : 300px;
 	width : 80%;
+	display : -webkit-box;
+	display : -ms-flexbox;
 	display : flex;
-	flex-direction : column;
-	justify-content : center;
-	align-items : center;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	    -ms-flex-direction : column;
+	        flex-direction : column;
+	-webkit-box-pack : center;
+	    -ms-flex-pack : center;
+	        justify-content : center;
+	-webkit-box-align : center;
+	    -ms-flex-align : center;
+	        align-items : center;
 }
 
 @media only screen and (min-width : 768px) {
@@ -72,17 +96,24 @@ footer {
 
 .quote-wrapper {
 	background-color : white;
+	display : -webkit-box;
+	display : -ms-flexbox;
 	display : flex;
-	flex-direction : column;
-	align-items : center;
-	justify-content : space-around;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	    -ms-flex-direction : column;
+	        flex-direction : column;
+	-webkit-box-align : center;
+	    -ms-flex-align : center;
+	        align-items : center;
+	-ms-flex-pack : distribute;
+	    justify-content : space-around;
 	border-top-left-radius : 35px;
 	border-bottom-right-radius : 35px;
 	padding : 20px;
 	margin-top : 5px;
 	
 	-webkit-box-shadow: 10px 10px 19px -4px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 19px -4px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 19px -4px rgba(0,0,0,0.75);
 }
 
@@ -101,8 +132,12 @@ footer {
 
 .author-box {
 	width : 90%;
+	display : -webkit-box;
+	display : -ms-flexbox;
 	display : flex;
-	justify-content : flex-end;
+	-webkit-box-pack : end;
+	    -ms-flex-pack : end;
+	        justify-content : flex-end;
 	margin-top : 5px;
 	font-size : 18px;
 }
@@ -130,7 +165,10 @@ footer {
 
 .buttons {
 	margin-top : 5px;
-	align-self : flex-start;
+	-ms-flex-item-align : start;
+	    align-self : flex-start;
+	display : -webkit-box;
+	display : -ms-flexbox;
 	display : flex;
 	margin-left : 7.5%;
 }
@@ -141,7 +179,9 @@ footer {
 	background-color : inherit;
 	font-size : 2em;
 	color : #000000;
-	transition-duration : 0.4s;
+	-webkit-transition-duration : 0.4s;
+	     -o-transition-duration : 0.4s;
+	        transition-duration : 0.4s;
 }
 
 @media only screen and (min-width : 768px) {
@@ -156,13 +196,17 @@ footer {
 
 .button:hover {
 	opacity : 0.5;
-	transition-duration : 0.4s;
+	-webkit-transition-duration : 0.4s;
+	     -o-transition-duration : 0.4s;
+	        transition-duration : 0.4s;
 }
 
 #new-quote {
 	font-size : 4em;
 	color : #FFFFFF;
-	transition-duration : 0.4s;
+	-webkit-transition-duration : 0.4s;
+	     -o-transition-duration : 0.4s;
+	        transition-duration : 0.4s;
 	border : none;
 	outline : 0;
 	margin-top : 20px;
@@ -176,55 +220,37 @@ footer {
 
 .object-rotate-z-animation {
 	-webkit-animation : object-rotate-z 2s linear 0s infinite;
-	-moz-animation : object-rotate-z 2s linear 0s infinite;
-	-o-animation : object-rotate-z 2s linear 0s infinite;
 	animation : object-rotate-z 2s linear 0s infinite;
 }
 
 .animation-running {
 	-webkit-animation-play-state : running;
-	-moz-animation-play-state : running;
-	-o-animation-play-state : running;
 	animation-play-state : running;
 }
 
 .animation-paused {
-	animation-play-state : paused;
+	-webkit-animation-play-state : paused;
+	        animation-play-state : paused;
 }
 
 @-webkit-keyframes object-rotate-z {
 	from {
-		transform : rotateZ(0deg);
+		-webkit-transform : rotateZ(0deg);
+		        transform : rotateZ(0deg);
 	}
 	to {
-		transform : rotateZ(360deg);
-	}
-}
-
-@-moz-keyframes object-rotate-z {
-	from {
-		transform : rotateZ(0deg);
-	}
-	to {
-		transform : rotateZ(360deg);
-	}
-}
-
-@-o-keyframes object-rotate-z {
-	from {
-		transform : rotateZ(0deg);
-	}
-	to {
-		transform : rotateZ(360deg);
+		-webkit-transform : rotateZ(360deg);
+		        transform : rotateZ(360deg);
 	}
 }
 
 @keyframes object-rotate-z {
 	from {
-		transform : rotateZ(0deg);
+		-webkit-transform : rotateZ(0deg);
+		        transform : rotateZ(0deg);
 	}
 	to {
-		transform : rotateZ(360deg);
+		-webkit-transform : rotateZ(360deg);
+		        transform : rotateZ(360deg);
 	}
 }
-
